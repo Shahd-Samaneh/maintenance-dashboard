@@ -1,0 +1,71 @@
+.navbar {
+  height: 80px;
+  background: white;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.searchBox {
+  width: 380px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f6f7fb;
+  border-radius: 12px;
+  padding: 0 15px;
+}
+
+.searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+.icon {
+  color: gray;
+  font-size: 18px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 13px;
+  color: gray;
+}
