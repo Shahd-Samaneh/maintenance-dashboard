@@ -1,8 +1,17 @@
-import React from 'react'
+import styles from "./SearchBar.module.css";
+import { FiSearch } from "react-icons/fi";
 
 function SearchBar() {
   return (
-    <div>SearchBar</div>
-  )
+    <div className={styles.searchBar}>
+      <FiSearch className={styles.icon} />
+
+      <input
+        type="text"
+        placeholder="Search requests..."
+      />
+    </div>
+  );
 }
-export default  SearchBar;
+
+export default SearchBar;

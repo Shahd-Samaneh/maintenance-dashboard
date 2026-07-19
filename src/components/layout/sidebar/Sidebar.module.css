@@ -25,14 +25,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   padding: 12px 15px;
-
   text-decoration: none;
   color: #555;
-
   border-radius: 10px;
-
   transition: 0.3s;
 }
 
@@ -42,6 +38,62 @@
 }
 
 .active {
-  background: #2563eb;
+  background: #2563eb !important;
   color: white !important;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 200px;
+    padding: 24px 16px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .menu a {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ececec;
+    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu a {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+   .menu {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .menu a {
+    padding: 8px 10px;
+  }
+
 }

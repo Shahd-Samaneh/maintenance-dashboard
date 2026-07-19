@@ -11,16 +11,22 @@ function Dashboard() {
   return (
     <div className={styles.dashboard}>
       <div className={styles.header}>
-        <h1>Hello👋</h1>
+        <h1>Maintenance Dashboard</h1>
         <p>Manage and track your maintenance requests.</p>
       </div>
-      
+
       <div className={styles.stats}>
         <StatsCard title="Pending" value="12" icon={<FiClock />} />
         <StatsCard title="Scheduled" value="5" icon={<FiCalendar />} />
         <StatsCard title="Completed" value="20" icon={<FiCheckCircle />} />
       </div>
 
+      <div className={styles.actions}>
+        <SearchBar />
+        <FilterBar />
+      </div>
+
+      <RequestTable />
     </div>
   );
 }

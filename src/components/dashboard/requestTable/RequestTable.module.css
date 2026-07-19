@@ -1,0 +1,61 @@
+.tableContainer {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  overflow-x:auto;
+}
+
+.table {
+  width: 100%;
+  min-width:700px;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 16px;
+  color: #6b7280;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pending {
+  background: #FEF3C7;
+  color: #B45309;
+}
+
+.scheduled {
+  background: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.completed {
+  background: #DCFCE7;
+  color: #15803D;
+}
+
+.button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}

@@ -1,9 +1,14 @@
-import React from 'react'
+import styles from "./FilterBar.module.css";
 
 function FilterBar() {
   return (
-    <div>FilterBar</div>
-  )
+    <div className={styles.filterBar}>
+      <button className={styles.active}>All</button>
+      <button>Pending</button>
+      <button>Scheduled</button>
+      <button>Completed</button>
+    </div>
+  );
 }
 
-export default  FilterBar;
+export default FilterBar;
