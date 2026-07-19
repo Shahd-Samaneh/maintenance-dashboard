@@ -13,15 +13,8 @@ function Navbar() {
       </div>
 
       <div className={styles.rightSection}>
-
-        <div className={styles.profile}>
-          <div className={styles.avatar}>S</div>
-
-          <div>
-            <p className={styles.name}>Shahd</p>
-            <span className={styles.role}>User</span>
-          </div>
-        </div>
+        <div className={styles.avatar}>U</div>
+        <span className={styles.role}>User</span>
       </div>
     </nav>
   );

@@ -1,0 +1,19 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #777;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}

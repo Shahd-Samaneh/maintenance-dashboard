@@ -8,10 +8,8 @@ function Layout() {
   return (
     <div className={styles.layout}>
       <Sidebar />
-
       <div className={styles.main}>
         <Navbar />
-
         <div className={styles.content}>
           <Outlet />
         </div>
