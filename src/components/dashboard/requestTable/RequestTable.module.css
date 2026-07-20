@@ -3,12 +3,12 @@
   border-radius: 16px;
   padding: 20px;
   border: 1px solid #e5e7eb;
-  overflow-x:auto;
+  overflow-x: auto;
 }
 
 .table {
   width: 100%;
-  min-width:700px;
+  min-width: 700px;
   border-collapse: collapse;
 }
 
@@ -47,15 +47,50 @@
   color: #15803D;
 }
 
-.button {
-  border: none;
-  background: #2563eb;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 8px;
-  cursor: pointer;
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.button:hover {
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.viewBtn {
+  background: #2563eb;
+  color: white;
+}
+
+.viewBtn:hover {
   background: #1d4ed8;
+}
+
+.editBtn {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.editBtn:hover {
+  background: #bfdbfe;
+}
+
+.deleteBtn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
 }

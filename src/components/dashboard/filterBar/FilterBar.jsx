@@ -1,12 +1,15 @@
 import styles from "./FilterBar.module.css";
 
-function FilterBar() {
+function FilterBar({ status, setStatus }) {
+  const filters = ["All", "Pending", "Scheduled", "Completed"];
+
   return (
     <div className={styles.filterBar}>
-      <button className={styles.active}>All</button>
-      <button>Pending</button>
-      <button>Scheduled</button>
-      <button>Completed</button>
+      {filters.map((item) => (
+        <button key={item} className={status === item ? styles.active : ""} onClick={() => setStatus(item)}>
+          {item}
+        </button>
+      ))}
     </div>
   );
 }
